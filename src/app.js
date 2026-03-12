@@ -1,3 +1,4 @@
+// app.js
 const express = require("express");
 const router = require("./routes/notesRoutes")
 const app = express();
@@ -12,3 +13,4 @@ app.get("/", (req, res) => {
 app.use("/notes", router);
 
 module.exports = app;
+
