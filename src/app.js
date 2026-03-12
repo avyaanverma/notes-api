@@ -10,7 +10,12 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/task", (req,res)=>{
+  res.json({status: "Task app currently offline"})
+})
+
 app.use("/notes", router);
 
 module.exports = app;
+
 
